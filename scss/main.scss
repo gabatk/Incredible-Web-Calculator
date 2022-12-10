@@ -41,6 +41,7 @@ body {
 }
 
 .score {
+    &__window {
 	display: flex;
 	align-items: center;
 	justify-content: end;
@@ -49,6 +50,7 @@ body {
 	background-color: rgb(57, 56, 56);
 	color: #ddd;
 	font-size: 4rem;
+}
 }
 
 // SIMPLE CALCULATOR
@@ -65,6 +67,7 @@ body {
 		font-size: 2rem;
 		font-weight: bold;
 		border: 1px solid #ddd;
+        cursor: pointer;
 		transition: transform 0.3s;
 
 		&:hover {

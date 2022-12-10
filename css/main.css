@@ -36,7 +36,7 @@ body {
   font-weight: bold;
 }
 
-.score {
+.score__window {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -60,6 +60,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   border: 1px solid #ddd;
+  cursor: pointer;
   transition: transform 0.3s;
 }
 .calculator__btn:hover {
