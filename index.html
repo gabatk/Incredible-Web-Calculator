@@ -4,14 +4,54 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 		<title>Incredible Web Calculator</title>
+        <link rel="stylesheet" href="./css/main.css">
 	</head>
 	<body>
-		<div class="wrapper">
-			<header>
-				<h1 class="header__title">Your Incredible Web Calculator</h1>
-			</header>
-			
-		</div>
-	</body>
+
+        <div class="wrapper">
+		<header>
+			<h1 class="header__title">Your Incredible Web Calculator</h1>
+		</header>
+
+		<section class="type">
+			<div class="type__simple"><input type="checkbox" name="simple-calc" id="simple-calc" />
+			<label for="simple-calculator">Simple Calculator</label></div>
+			<div class="type__temp"><input type="checkbox" name="temperature" id="temp-calc" />
+			<label for="temp-calculator">Simple Calculator</label></div>
+			<div class="type__days"><input type="checkbox" name="days" id="days-number" />
+			<label for="days-number">Number of Days</label></div>
+			<div class="type__tip"><input type="checkbox" name="tip" id="tip-calc" />
+			<label for="tip-calc">Tip Calculator</label></div>
+		</section>
+
+        <section>
+            <div class="score">0</div>
+        </section>
+
+		<section class="calculator">
+				<button class="calculator__btn calculator__btn-ac">AC</button>
+				<button class="calculator__btn">DEL</button>
+				<button class="calculator__btn">/</button>
+				<button class="calculator__btn">7</button>
+				<button class="calculator__btn">8</button>
+				<button class="calculator__btn">9</button>
+				<button class="calculator__btn">x</button>
+				<button class="calculator__btn">4</button>
+				<button class="calculator__btn">5</button>
+				<button class="calculator__btn">6</button>
+				<button class="calculator__btn">+</button>
+				<button class="calculator__btn">1</button>
+				<button class="calculator__btn">2</button>
+				<button class="calculator__btn">3</button>
+				<button class="calculator__btn">-</button>
+				<button class="calculator__btn">.</button>
+				<button class="calculator__btn">0</button>
+				<button class="calculator__btn calculator__btn-equal">=</button>
+            </section>
+        </body>
+    </div>
 </html>
