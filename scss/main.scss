@@ -34,6 +34,10 @@ body {
 	// display: flex;
 	margin-top: 1em;
 	font-size: 1.5rem;
+
+	&__calculator:hover {
+		font-weight: bold;
+	}
 }
 
 .score {
@@ -47,19 +51,25 @@ body {
 	font-size: 4rem;
 }
 
+// SIMPLE CALCULATOR
 .calculator {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 
 	&__btn {
-		background-color: #a7bbc7;
 		height: 50px;
+		background-color: #a7bbc7;
 		color: rgb(57, 56, 56);
 		font-family: 'Montserrat', sans-serif;
 		font-size: 2rem;
 		font-weight: bold;
 		border: 1px solid #ddd;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(0.9);
+		}
 
 		&-ac {
 			grid-column: 1/3;

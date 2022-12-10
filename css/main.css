@@ -32,6 +32,9 @@ body {
   margin-top: 1em;
   font-size: 1.5rem;
 }
+.type__calculator:hover {
+  font-weight: bold;
+}
 
 .score {
   display: flex;
@@ -50,13 +53,17 @@ body {
   grid-template-rows: repeat(5, 1fr);
 }
 .calculator__btn {
-  background-color: #a7bbc7;
   height: 50px;
+  background-color: #a7bbc7;
   color: rgb(57, 56, 56);
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   border: 1px solid #ddd;
+  transition: transform 0.3s;
+}
+.calculator__btn:hover {
+  transform: scale(0.9);
 }
 .calculator__btn-ac {
   grid-column: 1/3;
