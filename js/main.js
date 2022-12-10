@@ -22,4 +22,19 @@ const getNumber = () => {
 	});
 };
 
+const getSign = () => {
+	signBtn.forEach(sign => {
+		sign.addEventListener('click', () => {
+			dot.disabled = false;
+
+			score.innerHTML = insertedValue + sign.innerHTML;
+		});
+		// insertedValue = score.innerHTML
+	});
+};
+
 getNumber();
+getSign();
+
+// let valueWithoutSign = insertedValue;
+// console.log(valueWithoutSign);
