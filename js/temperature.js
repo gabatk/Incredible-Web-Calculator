@@ -20,6 +20,17 @@ const fahrToCel = () => {
 	score.innerHTML = `${converter.value}°F equals ${celsius.toFixed(1)}°C`;
 	insertedNumber.value = '';
 };
+const swap = () => {
+	if (one.textContent === '°C') {
+		one.textContent = '°F';
+		two.textContent = '°C';
+		insertedNumber.value = '';
+	} else {
+		one.textContent = '°C';
+		two.textContent = '°F';
+		insertedNumber.value = '';
+	}
+};
 
 const convert = () => {
 	if (insertedNumber.value !== '') {
@@ -42,3 +53,4 @@ const reset = () => {
 
 resetBtn.addEventListener('click', reset);
 convBtn.addEventListener('click', convert);
+swapBtn.addEventListener('click', swap);
