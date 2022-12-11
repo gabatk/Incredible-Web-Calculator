@@ -1,0 +1,38 @@
+// TEMPEATURE CONVERTER
+@use './colors';
+
+.converter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5em;
+	&__title {
+		font-size: 3rem;
+	}
+
+	&__placeholder {
+		width: 50%;
+		height: 2em;
+		margin: 1em;
+		font-size: 2rem;
+		border: 1px solid #da7f8f;
+	}
+
+	&__btn {
+		height: 50px;
+		padding: 1em;
+		margin: 1em;
+		background-color: colors.$blue;
+		color: colors.$dark;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2rem;
+		font-weight: bold;
+		border: 1px solid colors.$dirty-white;
+		cursor: pointer;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(0.9);
+		}
+	}
+}

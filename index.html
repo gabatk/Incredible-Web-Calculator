@@ -43,7 +43,7 @@
 				</div>
 			</section>
 
-			<section class="calculator">
+			<!-- <section class="calculator">
 				<button class="calculator__btn calculator__btn-ac">AC</button>
 				<button class="calculator__btn calculator__btn-del">DEL</button>
 				<button class="calculator__btn calculator__btn-sign">/</button>
@@ -65,8 +65,27 @@
 				</button>
 				<button class="calculator__btn calculator__btn-number">0</button>
 				<button class="calculator__btn calculator__btn-equal">=</button>
+			</section> -->
+
+			<section class="converter">
+				<label for="converter" class="converter__title"
+					>Converter <span class="one">°C</span> to
+					<span class="two">°F</span></label
+				>
+				<input
+					type="number"
+					id="converter"
+					placeholder="Enter the number..."
+					class="converter__placeholder" />
+
+				<div>
+					<button class="converter__btn converter__btn-conv">Convert</button>
+					<button class="converter__btn converter__btn-reset">Reset</button>
+					<button class="converter__btn converter__btn-swap">Swap Units</button>
+				</div>
 			</section>
 		</div>
+
 
 		<script src="./js/main.js" type="module"></script>
 	</body>

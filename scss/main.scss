@@ -1,3 +1,6 @@
+@use './colors'; @use './simple';
+@use './temperature';
+
 *,
 *::after,
 *::before {
@@ -12,13 +15,13 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	color: rgb(57, 56, 56);
+	color: colors.$dark;
 	background-color: #eaeaea;
 }
 
 .wrapper {
 	position: relative;
-	background-color: #faf3f3;
+	background-color: colors.$light-red;
 	height: 100vh;
 	padding: 3em;
 }
@@ -41,46 +44,14 @@ body {
 }
 
 .score {
-    &__window {
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	height: 70px;
-	margin-top: 1em;
-	background-color: rgb(57, 56, 56);
-	color: #ddd;
-	font-size: 4rem;
-}
-}
-
-// SIMPLE CALCULATOR
-.calculator {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-
-	&__btn {
-		height: 50px;
-		background-color: #a7bbc7;
-		color: rgb(57, 56, 56);
-		font-family: 'Montserrat', sans-serif;
-		font-size: 2rem;
-		font-weight: bold;
-		border: 1px solid #ddd;
-        cursor: pointer;
-		transition: transform 0.3s;
-
-		&:hover {
-			transform: scale(0.9);
-		}
-
-		&-ac {
-			grid-column: 1/3;
-		}
-
-		&-equal {
-			grid-column: 3/5;
-			background-color: #da7f8f;
-		}
+	&__window {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		height: 70px;
+		margin-top: 1em;
+		background-color: colors.$dark;
+		color: colors.$dirty-white;
+		font-size: 4rem;
 	}
 }
