@@ -11,6 +11,7 @@ let insertedValue = '';
 const getNumber = () => {
 	numberBtn.forEach(number => {
 		number.addEventListener('click', () => {
+			insertedValue = score.innerHTML;
 			insertedValue = insertedValue + number.innerHTML;
 
 			if (number.innerHTML === '.') {
@@ -29,7 +30,6 @@ const getSign = () => {
 
 			score.innerHTML = insertedValue + sign.innerHTML;
 		});
-		// insertedValue = score.innerHTML
 	});
 };
 
