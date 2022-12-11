@@ -26,15 +26,37 @@ const getNumber = () => {
 const getSign = () => {
 	signBtn.forEach(sign => {
 		sign.addEventListener('click', () => {
-			dot.disabled = false;
+			if (insertedValue !== '' || sign.innerHTML === '-') {
+				dot.disabled = false;
 
-			score.innerHTML = insertedValue + sign.innerHTML;
+				score.innerHTML = insertedValue + sign.innerHTML;
+			}
 		});
+	});
+};
+
+const clearAll = () => {
+	acBtn.addEventListener('click', () => {
+		score.innerHTML = '';
+		insertedValue = '';
+	});
+};
+
+const deleteLast = () => {
+	delBtn.addEventListener('click', () => {
+		score.innerHTML = score.innerHTML.slice(0, -1);
+		insertedValue = score.innerHTML;
+	});
+};
+
+const calculate = () => {
+	equalBtn.addEventListener('click', () => {
+		score.innerHTML = eval(insertedValue);
 	});
 };
 
 getNumber();
 getSign();
-
-// let valueWithoutSign = insertedValue;
-// console.log(valueWithoutSign);
+clearAll();
+deleteLast();
+calculate();
