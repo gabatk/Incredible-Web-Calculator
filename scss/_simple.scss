@@ -13,9 +13,8 @@
 		font-family: 'Montserrat', sans-serif;
 		font-size: 2rem;
 		font-weight: bold;
-		border: 1px solid 
-		colors.$dirty-white;
-        cursor: pointer;
+		border: 1px solid colors.$dirty-white;
+		cursor: pointer;
 		transition: transform 0.3s;
 
 		&:hover {
