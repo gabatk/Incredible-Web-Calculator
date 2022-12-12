@@ -58,6 +58,50 @@
   transform: scale(0.9);
 }
 
+.tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em;
+}
+.tip__title {
+  font-size: 3rem;
+}
+.tip__placeholder {
+  width: 50%;
+  height: 2em;
+  margin: 1em;
+  font-size: 2rem;
+  border: 1px solid #da7f8f;
+}
+.tip__rate-title {
+  font-size: 2.5rem;
+  margin-top: 2em;
+}
+.tip__rate-btn {
+  height: 50px;
+  padding: 1em;
+  margin: 1em;
+  background-color: #a7bbc7;
+  color: #393838;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.tip__rate-btn:hover {
+  transform: scale(0.9);
+}
+.tip__rate-other {
+  width: 50%;
+  height: 2em;
+  margin: 1em;
+  font-size: 1.5rem;
+  border: 1px solid #da7f8f;
+}
+
 *,
 *::after,
 *::before {
