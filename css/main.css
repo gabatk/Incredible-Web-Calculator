@@ -122,8 +122,8 @@ body {
 
 .wrapper {
   position: relative;
-  background-color: #faf3f3;
-  height: 150vh;
+  background-image: linear-gradient(135deg, #eacfd4, #c7daf6);
+  height: 130vh;
   padding: 3em;
 }
 
