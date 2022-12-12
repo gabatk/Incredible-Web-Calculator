@@ -27,10 +27,6 @@
 					<input type="checkbox" name="temperature" id="temp-calc" />
 					<label for="temp-calculator">Temperature Calculator</label>
 				</div>
-				<div class="type__calculator type__days">
-					<input type="checkbox" name="days" id="days-number" />
-					<label for="days-number">Number of Days</label>
-				</div>
 				<div class="type__calculator type__tip">
 					<input type="checkbox" name="tip" id="tip-calc" />
 					<label for="tip-calc">Tip Calculator</label>
@@ -67,7 +63,7 @@
 				<button class="calculator__btn calculator__btn-equal">=</button>
 			</section> -->
 
-			<section class="converter">
+			<!-- <section class="converter">
 				<label for="converter" class="converter__title"
 					>Converter <span class="one">°C</span> to
 					<span class="two">°F</span></label
@@ -83,7 +79,22 @@
 					<button class="converter__btn converter__btn-reset">Reset</button>
 					<button class="converter__btn converter__btn-swap">Swap Units</button>
 				</div>
-			</section>
+			</section> -->
+
+<section class="tip">
+	<p class="tip__title">Tip Calculator</p>
+	<input type="number" placeholder="Enter your bill value..."
+		class="tip__placeholder">
+		<div class="tip__rate">
+		<label for="rate" class="tip__rate-title">Please select a tip rate.</label>
+		<button class="tip__rate-value">15%</button>
+		<button class="tip__rate-value">20%</button>
+		<button class="tip__rate-value">30%</button>
+		<input type="number" placeholder="Type a different value..." class="tip__rate-other">
+
+	</div>
+</section>
+
 		</div>
 
 

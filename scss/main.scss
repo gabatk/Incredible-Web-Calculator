@@ -1,5 +1,7 @@
-@use './colors'; @use './simple';
+@use './colors';
+@use './simple';
 @use './temperature';
+@use './tip';
 
 *,
 *::after,
