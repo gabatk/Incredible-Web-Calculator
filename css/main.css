@@ -97,9 +97,25 @@
 .tip__rate-other {
   width: 50%;
   height: 2em;
-  margin: 1em;
+  margin-top: 3em;
   font-size: 1.5rem;
-  border: 1px solid #da7f8f;
+  border: 1px solid #9bc0f6;
+}
+.tip__rate-other-btn {
+  height: 50px;
+  padding: 1em;
+  margin: 1em;
+  background-color: #a7bbc7;
+  color: #393838;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.tip__rate-other-btn:hover {
+  transform: scale(0.9);
 }
 
 *,
