@@ -1,7 +1,39 @@
-// function selectType(id) {
-//     for (let i = 0;i <= 2; i++)
-//     {
-//         document.querySelector(i).checked = false;
-//     }
-//     document.querySelector(id).checked = true;
-// }
+const simple = document.querySelector('.calculator');
+const temp = document.querySelector('.converter');
+const tip = document.querySelector('.tip');
+const sectionType = document.querySelector('.type');
+const checkbox = sectionType.querySelectorAll('input');
+const webCalculator = document.querySelectorAll('.web-calculator');
+
+const typeDict = {
+	simple__input: simple,
+	temp__input: temp,
+	tip__input: tip,
+};
+
+const selectType = () => {
+	checkbox.forEach(element => {
+		element.addEventListener('click', () => {
+			uncheck();
+			classHidden();
+			element.checked = true;
+			typeDict[element.id].classList.remove('hidden');
+		});
+	});
+};
+
+const uncheck = () => {
+	checkbox.forEach(element => {
+		element.checked = false;
+	});
+};
+
+const classHidden = () => {
+	webCalculator.forEach(element => {
+		if (!element.classList.contains('hidden')) {
+			element.classList.add('hidden');
+		}
+	});
+};
+
+selectType();

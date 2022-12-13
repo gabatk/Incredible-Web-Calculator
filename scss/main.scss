@@ -36,7 +36,6 @@ body {
 }
 
 .type {
-	// display: flex;
 	margin-top: 1em;
 	font-size: 1.5rem;
 
@@ -56,4 +55,8 @@ body {
 		color: colors.$dirty-white;
 		font-size: 4rem;
 	}
+}
+
+.hidden {
+	display: none;
 }

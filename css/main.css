@@ -165,4 +165,8 @@ body {
   background-color: #393838;
   color: #dddddd;
   font-size: 4rem;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
