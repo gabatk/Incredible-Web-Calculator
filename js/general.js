@@ -4,6 +4,7 @@ const tip = document.querySelector('.tip');
 const sectionType = document.querySelector('.type');
 const checkbox = sectionType.querySelectorAll('input');
 const webCalculator = document.querySelectorAll('.web-calculator');
+const score = document.querySelector('.score__value');
 
 const typeDict = {
 	simple__input: simple,
@@ -16,6 +17,7 @@ const selectType = () => {
 		element.addEventListener('click', () => {
 			uncheck();
 			classHidden();
+			scoreClear();
 			element.checked = true;
 			typeDict[element.id].classList.remove('hidden');
 		});
@@ -34,6 +36,10 @@ const classHidden = () => {
 			element.classList.add('hidden');
 		}
 	});
+};
+
+const scoreClear = () => {
+	score.innerHTML = '';
 };
 
 selectType();
