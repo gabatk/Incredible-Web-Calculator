@@ -1,2 +1,39 @@
-//  przy zmianie kalkulatora musi wyczyścić
+@media (max-width: 767px) {
+	.tip {
+		&__rate-btn {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
 
+@media (min-width: 768px) {
+	.tip {
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__rate {
+			&-title {
+				font-size: 3rem;
+			}
+
+			&-btn {
+				height: 50px;
+				padding: 1em;
+				margin: 1em;
+			}
+
+			&-other {
+				font-size: 2rem;
+
+				&-btn {
+					height: 50px;
+					height: fit-content;
+					padding: 1em;
+					margin: 1em;
+				}
+			}
+		}
+	}
+}

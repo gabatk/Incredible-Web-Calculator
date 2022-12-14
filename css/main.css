@@ -186,6 +186,36 @@
     opacity: 0.2;
   }
 }
+@media (max-width: 767px) {
+  .tip__rate-btn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .tip__title {
+    font-size: 3rem;
+  }
+  .tip__rate-title {
+    font-size: 3rem;
+  }
+  .tip__rate-btn {
+    height: 50px;
+    padding: 1em;
+    margin: 1em;
+  }
+  .tip__rate-other {
+    font-size: 2rem;
+  }
+  .tip__rate-other-btn {
+    height: 50px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em;
+    margin: 1em;
+  }
+}
 *,
 *::after,
 *::before {
