@@ -1,5 +1,6 @@
 // TIP CALCULATOR
 @use './colors';
+@use './mixins';
 
 .tip {
 	display: flex;
@@ -13,11 +14,9 @@
 	}
 
 	&__placeholder {
-		height: 2em;
-		margin: 1em;
-		font-size: 2rem;
-		border: 1px solid #da7f8f;
+		@include mixins.placeholder;
 	}
+
 	&__rate {
 		&-title {
 			font-size: 2rem;
@@ -25,46 +24,19 @@
 		}
 
 		&-btn {
-			height: 50px;
+			@include mixins.btnStyles;
 			padding: 1em;
 			margin: 0.5em 1em;
-			background-color: colors.$blue;
-			color: colors.$dark;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 2rem;
-			font-weight: bold;
-			border: 1px solid colors.$dirty-white;
-			cursor: pointer;
-			transition: transform 0.3s;
-
-			&:hover {
-				transform: scale(0.9);
-			}
 		}
 
 		&-other {
-			height: 2em;
-			margin-top: 2em;
-			font-size: 1.5rem;
-			border: 1px solid #9bc0f6;
+			@include mixins.placeholder;
 
 			&-btn {
-				height: 50px;
+				@include mixins.btnStyles;
 				height: fit-content;
 				padding: 0.5em;
 				margin: 1em 1em 1em 0;
-				background-color: colors.$blue;
-				color: colors.$dark;
-				font-family: 'Montserrat', sans-serif;
-				font-size: 2rem;
-				font-weight: bold;
-				border: 1px solid colors.$dirty-white;
-				cursor: pointer;
-				transition: transform 0.3s;
-
-				&:hover {
-					transform: scale(0.9);
-				}
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 // SIMPLE CALCULATOR
 @use './colors';
+@use './mixins';
 
 .calculator {
 	display: grid;
@@ -7,19 +8,7 @@
 	grid-template-rows: repeat(5, 1fr);
 
 	&__btn {
-		height: 50px;
-		background-color: colors.$blue;
-		color: colors.$dark;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 2rem;
-		font-weight: bold;
-		border: 1px solid colors.$dirty-white;
-		cursor: pointer;
-		transition: transform 0.3s;
-
-		&:hover {
-			transform: scale(0.9);
-		}
+		@include mixins.btnStyles;
 
 		&-ac {
 			grid-column: 1/3;

@@ -43,11 +43,6 @@
 }
 .converter__btn {
   height: 50px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 1em;
-  margin: 1em;
   background-color: #a7bbc7;
   color: #393838;
   font-family: "Montserrat", sans-serif;
@@ -56,6 +51,11 @@
   border: 1px solid #dddddd;
   cursor: pointer;
   transition: transform 0.3s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1em;
+  margin: 1em;
 }
 .converter__btn:hover {
   transform: scale(0.9);
@@ -83,8 +83,6 @@
 }
 .tip__rate-btn {
   height: 50px;
-  padding: 1em;
-  margin: 0.5em 1em;
   background-color: #a7bbc7;
   color: #393838;
   font-family: "Montserrat", sans-serif;
@@ -93,23 +91,20 @@
   border: 1px solid #dddddd;
   cursor: pointer;
   transition: transform 0.3s;
+  padding: 1em;
+  margin: 0.5em 1em;
 }
 .tip__rate-btn:hover {
   transform: scale(0.9);
 }
 .tip__rate-other {
   height: 2em;
-  margin-top: 2em;
-  font-size: 1.5rem;
-  border: 1px solid #9bc0f6;
+  margin: 1em;
+  font-size: 2rem;
+  border: 1px solid #da7f8f;
 }
 .tip__rate-other-btn {
   height: 50px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 0.5em;
-  margin: 1em 1em 1em 0;
   background-color: #a7bbc7;
   color: #393838;
   font-family: "Montserrat", sans-serif;
@@ -118,6 +113,11 @@
   border: 1px solid #dddddd;
   cursor: pointer;
   transition: transform 0.3s;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5em;
+  margin: 1em 1em 1em 0;
 }
 .tip__rate-other-btn:hover {
   transform: scale(0.9);
