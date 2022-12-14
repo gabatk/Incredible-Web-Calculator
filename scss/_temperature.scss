@@ -13,7 +13,6 @@
 	}
 
 	&__placeholder {
-		width: 50%;
 		height: 2em;
 		margin: 1em;
 		font-size: 2rem;
@@ -22,7 +21,8 @@
 
 	&__btn {
 		height: 50px;
-		padding: 1em;
+		width: fit-content;
+		padding: 0 1em;
 		margin: 1em;
 		background-color: colors.$blue;
 		color: colors.$dark;

@@ -1,50 +1,48 @@
 @use './colors';
 
 .icons {
-    position: relative;
-    height: 70vh;
+	position: relative;
+	height: 60vh;
 }
 .icon {
-    position: absolute;
-    // color: #b68d8d5a;
-    color: #c489a96b;
-    font-size: 8rem;
+	position: absolute;
+	color: #c489a96b;
+	font-size: 5rem;
 
-    &__one {
-        top: 5%;
-        left: 27%;
-        animation: numberAnimation 6s infinite 2s;
-    }
-    &__two {
-                top: 44%;
-        right: 27%;
-        animation: numberAnimation 6s infinite;
-    }
-    &__three {
-               top: 79%;
-               animation: numberAnimation 6s infinite 6s;
-    }
-    &__four {
-                bottom: 0;
-        right: 0;
-        animation: numberAnimation 6s infinite;
-    }
-    &__five {
-                bottom: 35%;
-        left: 20%;
-        animation: numberAnimation 6s infinite 4s;
-    }
+	&__one {
+		top: 5%;
+		left: 27%;
+		animation: numberAnimation 6s infinite 2s;
+	}
+	&__two {
+		top: 37%;
+		right: 27%;
+		animation: numberAnimation 6s infinite;
+	}
+	&__three {
+		top: 79%;
+		animation: numberAnimation 6s infinite 6s;
+	}
+	&__four {
+		bottom: 0;
+		right: 0;
+		animation: numberAnimation 6s infinite;
+	}
+	&__five {
+		bottom: 35%;
+		left: 33%;
+		animation: numberAnimation 6s infinite 4s;
+	}
 }
 
 @keyframes numberAnimation {
-    0% {
-opacity: 0.3;
-    } 
-    50% {
-opacity: 1;
-    }
-    100% {
-opacity: 0.2;
-    }
-    
+	0% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
+	}
 }
