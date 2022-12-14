@@ -19,14 +19,15 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: colors.$dark;
-	background-color: #eaeaea;
+	background-image: linear-gradient(210deg, #b0f9a9, #17f9f2);
+	height: 100%;
 }
 
 .wrapper {
 	position: relative;
-	// background-image: linear-gradient(135deg, #eacfd4, #c7daf6);
-	background-image: linear-gradient(210deg, #b0f9a9, #17f9f2);
-	height: 130vh;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
 	padding: 3em;
 }
 

@@ -198,13 +198,15 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: #393838;
-  background-color: #eaeaea;
+  background-image: linear-gradient(210deg, #b0f9a9, #17f9f2);
+  height: 100%;
 }
 
 .wrapper {
   position: relative;
-  background-image: linear-gradient(210deg, #b0f9a9, #17f9f2);
-  height: 130vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
   padding: 3em;
 }
 
